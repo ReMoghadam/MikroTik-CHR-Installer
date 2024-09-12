@@ -61,16 +61,16 @@ while true; do
             sudo funzip mikrotik-chr.zip > mikrotik-chr.img
             sudo dd if=mikrotik-chr.img of=/dev/sda bs=1M
             sudo reboot
-            dialog --clear --backtitle "$title" --title "Success" --msgbox "\nMikroTik CHR installed successfully.\n\nBye Bye!" 0 0
+            dialog --clear --backtitle "$title" --title "Success" --msgbox "\nMikroTik CHR 7.x installed successfully.\n\nPlease Login to your Mikrotik and secure default configurations ( Username & Password / IP Services ) ,ASAP., \n\nBye Bye!" 0 0
 
             ;;
 
         "2") # Install RouterOS Version 6
-            sudo curl -L https://download.mikrotik.com/routeros/6.49.15/chr-6.49.15.img.zip > mikrotik-chr.zip
+            sudo curl -L https://download.mikrotik.com/routeros/6.49.16/chr-6.49.16.img.zip > mikrotik-chr.zip
             sudo funzip mikrotik-chr.zip > mikrotik-chr.img
             sudo dd if=mikrotik-chr.img of=/dev/sda bs=1M
             sudo reboot
-            dialog --clear --backtitle "$title" --title "Success" --msgbox "\nMikroTik CHR installed successfully.\n\nBye Bye!" 0 0
+            dialog --clear --backtitle "$title" --title "Success" --msgbox "\nMikroTik CHR 6.x installed successfully.\n\nPlease Login to your Mikrotik and secure default configurations ( Username & Password / IP Services ) ,ASAP., \n\nBye Bye!" 0 0
             ;;
 
        
