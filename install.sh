@@ -66,7 +66,7 @@ while true; do
             ;;
 
         "2") # Install RouterOS Version 6
-            sudo curl -L https://download.mikrotik.com/routeros/6.49.11/chr-6.49.11.img.zip > mikrotik-chr.zip
+            sudo curl -L https://download.mikrotik.com/routeros/6.49.10/chr-6.49.10.img.zip > mikrotik-chr.zip
             sudo funzip mikrotik-chr.zip > mikrotik-chr.img
             sudo dd if=mikrotik-chr.img of=/dev/sda bs=1M
             sudo reboot
